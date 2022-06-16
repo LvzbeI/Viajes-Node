@@ -1,0 +1,31 @@
+extends ./layout/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosostros
+        .row.mb-5
+            .col-md-6
+                p Somos una empresa 100% mexicana que abrió sus puertas por primera vez en Cancún en el 2014 bajo el lema: “Viaja ahora”.  Más de 6 años de experiencia en el ramo turístico nos han permitido brindar a nuestros clientes un servicio de excelencia, seguridad y confiablidad; los tres pilares que nos caracterizan.
+                p  Creemos que la experiencia de nuestros clientes empieza con nuestros colaboradores, por lo que un trato de calidad trae consigo una atención de calidad. Somos más de 60 colabores que día a día nos perfeccionamos para brindarte la mejor experiencia en viajes.
+            .col-md-6
+                img(src='/img/inicio_nosotros.jpg', alt='imagen nosotros', class="img-fluid")
+
+        include ./layout/bloque_viajes
+    
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo del 2022 - 28 de MArzo de 2022
+                        p.precio $2,500.00 Dolares
+
+    .container
+        h2.mt-5.text-center Testimoniales
+            include ./layout/bloque_testimoniales
